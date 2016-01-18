@@ -95,6 +95,7 @@ module Baryon
     def service_options(resource)
       resource.command(new_resource.command)
       resource.user(new_resource.user)
+      resource.directory(new_resource.path)
     end
 
     private
