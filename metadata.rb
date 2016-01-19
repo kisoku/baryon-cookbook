@@ -6,4 +6,7 @@ description 'Installs/Configures baryon'
 long_description 'Installs/Configures baryon'
 version '0.1.0'
 
+issues_url 'https://github.com/kisoku/baryon-cookbook/issues'
+source_url 'https://github.com/kisoku/baryon-cookbook'
+
 depends 'poise-service'
