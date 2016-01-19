@@ -33,7 +33,7 @@ module Baryon
     property(:github_org, kind_of: String, default: lazy { node['baryon']['github_org'] })
     property(:github_webhook_secret, kind_of: String, default: lazy { node['baryon']['github_webhook_secret'] })
     property(:listen_address, kind_of: String, default: lazy { node['baryon']['listen_address'] })
-    property(:use_ssl, kind_of: [ TrueClass, FalseClass], default: false)
+    property(:use_ssl, kind_of: [ TrueClass, FalseClass], default: lazy { node['baryon']['use_ssl'] })
     property(:ssl_cert, template: true)
     property(:ssl_cert_path, kind_of: String, default: lazy { ::File.join(ssl_cert_dir, 'baryon.pem') })
     property(:ssl_key, template: true)
