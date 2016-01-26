@@ -4,7 +4,7 @@ maintainer_email 'msf@kisoku.net'
 license 'apache2'
 description 'Installs/Configures baryon'
 long_description 'Installs/Configures baryon'
-version '0.1.0'
+version '0.1.1'
 
 issues_url 'https://github.com/kisoku/baryon-cookbook/issues'
 source_url 'https://github.com/kisoku/baryon-cookbook'
