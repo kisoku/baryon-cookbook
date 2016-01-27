@@ -6,5 +6,5 @@ default['baryon']['github_api_token'] = nil
 default['baryon']['github_org'] = nil
 default['baryon']['github_webhook_secret'] = nil
 default['baryon']['use_ssl'] = false
-# 5 minutes in nanoseconds
-default['baryon']['interval'] = '5m'
+# you probably don't want this lower than the rate github resets the api rate limit
+default['baryon']['interval'] = '24h'
